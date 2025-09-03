@@ -1,5 +1,5 @@
 /* Responsive styles for mobile devices */
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
 	body {
 		font-size: 1rem;
 		padding: 0;
@@ -84,6 +84,116 @@
 		max-width: 100vw;
 		overflow-x: auto;
 	}
+}
+
+@media (max-width: 900px) {
+    body {
+        font-size: 1rem;
+        padding: 0;
+    }
+    .title-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+        width: 100vw;
+        box-sizing: border-box;
+    }
+    .left-side, .right-side {
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    .nav-icons {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    .icon {
+        font-size: 1rem;
+        padding: 0.4rem 0.8rem;
+        margin-right: 0.5rem;
+        min-width: 80px;
+    }
+    .profile-image {
+        width: 7rem;
+        height: 7rem;
+    }
+    .home-body, .projects-body, .about-body {
+        padding-top: 90px;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        box-sizing: border-box;
+    }
+    .project-card {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .project-image {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+    .card-details {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+        font-size: 1rem;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+    .lang span {
+        font-size: 0.9rem;
+        padding: 0.2rem 0.5rem;
+        margin: 0.1rem;
+    }
+    .button {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+    }
+    h1, h2, h3 {
+        font-size: 1.3rem !important;
+    }
+    .subtitle, .rotating-text {
+        font-size: 1rem !important;
+    }
+    .end {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+    .logo img {
+        height: 60px !important;
+    }
+    .about-body {
+        max-width: 100vw;
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .title-bar {
+        padding: 0.5rem;
+    }
+    .profile-image {
+        width: 5rem;
+        height: 5rem;
+    }
+    .card-details {
+        padding: 0.5rem;
+    }
+    .project-image {
+        max-width: 220px;
+    }
+    h1, h2, h3 {
+        font-size: 1.1rem !important;
+    }
+    .button {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
 }
 
 .rotating-text {
