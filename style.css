@@ -107,7 +107,7 @@ body {
 	font-family: 'Rubik', sans-serif;
 	position: relative;
 	color:#d1d1c7;
-	/* cursor:none; */
+	cursor:none;
 }
 
 .custom-cursor {
