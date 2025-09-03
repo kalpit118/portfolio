@@ -159,3 +159,41 @@ function loop() {
 	requestAnimationFrame(loop);
 }
 loop();
+
+// Project image hover effect
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.project-image').forEach(function(img) {
+        // Create overlay element
+        var overlay = document.createElement('img');
+        overlay.src = 'assets/live.png';
+        overlay.style.position = 'absolute';
+        overlay.style.top = '50%';
+        overlay.style.left = '50%';
+        overlay.style.transform = 'translate(-50%, -50%)';
+		overlay.style.height = '48px';
+		overlay.style.width = '48px';
+		overlay.style.objectFit = 'contain';
+        overlay.style.pointerEvents = 'none';
+        overlay.style.opacity = '0';
+        overlay.style.transition = 'opacity 0.3s';
+        overlay.className = 'project-live-overlay';
+        // Wrap image in a relative container
+        var wrapper = document.createElement('div');
+        wrapper.style.position = 'relative';
+        wrapper.style.display = 'inline-block';
+        wrapper.style.width = img.width + 'px';
+        wrapper.style.height = img.height + 'px';
+        img.parentNode.insertBefore(wrapper, img);
+        wrapper.appendChild(img);
+        wrapper.appendChild(overlay);
+        img.style.transition = 'filter 0.3s';
+        img.addEventListener('mouseenter', function() {
+            img.style.filter = 'blur(8px)';
+            overlay.style.opacity = '1';
+        });
+        img.addEventListener('mouseleave', function() {
+            img.style.filter = '';
+            overlay.style.opacity = '0';
+        });
+    });
+});
