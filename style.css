@@ -210,6 +210,7 @@
 	transform: rotateX(0deg) scaleY(1);
 }
 
+
 body {
 	margin: 0;
 	height: 100vh;
@@ -263,15 +264,16 @@ body {
 }
 
 .profile-image {
-	width: 12rem;
-	height: 12rem;
+	margin-top: rem;
+	width: 11rem;
+	height: 11rem;
 	border-radius: 20%;
-
 }
 
 .title-bar{
-	padding: 2rem;
+	padding: 2rem 2rem 0rem 2rem;
 	display: flex;
+	margin: 0;
 	position: fixed; 
 	top: 0;
 	color: #d1d1c7;
@@ -352,6 +354,10 @@ body {
 	scroll-margin-top: 8.75rem;
 }
 
+.home-body p{
+	margin:;
+	font-size: 1.5rem;
+}
 .header{
 	display: flex;
 	flex-direction:column;
@@ -391,8 +397,6 @@ p{
 	/* height: 6rem; */
 	width: 24rem;
 }
-
-
 
 .lang span{
 	border: 3px solid lightgreen;
@@ -739,4 +743,9 @@ p{
 	z-index: 2;
 }
 
-
+.socials a img {
+	transition: box-shadow 0.3s, transform 0.3s;
+}
+.socials a:hover img {
+	transform: scale(1.15);
+}
