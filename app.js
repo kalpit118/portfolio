@@ -36,6 +36,16 @@ function updateActiveNav() {
 	} else {
 		navHome && navHome.classList.add('active');
 	}
+
+	// Compact the title-bar when user scrolls down a little to save vertical space
+	const titleBar = document.querySelector('.title-bar');
+	if (titleBar) {
+		if ((window.scrollY || window.pageYOffset) > 40) {
+			titleBar.classList.add('compact');
+		} else {
+			titleBar.classList.remove('compact');
+		}
+	}
 }
 window.addEventListener('scroll', updateActiveNav);
 document.addEventListener('DOMContentLoaded', updateActiveNav);
