@@ -9,7 +9,6 @@ Welcome to my interactive, animated, and responsive portfolio website! Built to 
 - **Sticky Navigation Bar** with smooth scroll and active section highlight
 - **Animated Project Cards** with interactive blur and overlay
 - **Skills & Socials** with custom icons and interactive hover animations
-- **Mobile Popup** for development status and optimized mobile experience
 - **Minimal Custom Cursor** for a unique browsing vibe
 
 ---

@@ -14,10 +14,10 @@
         gap: 2rem;
         margin-bottom: 4rem;
     }
-    .project-image {
-        width: 35rem;
-        height: auto;
-    }
+    /* .project-image {
+        width: 35rem ;
+        height: 35rem ;
+    } */
     .card-details {
         width: 30rem;
         margin-left: 1rem;
@@ -79,6 +79,15 @@
         font-size: 1rem;
         padding: 0;
     }
+	.title-icon{
+		margin-bottom: 1.1rem;
+		margin-right: 5rem;
+	}
+	.title{
+		justify-content: center;
+		align-items: center;
+		margin-right: 4.4rem;
+	}
     .title-bar {
         flex-direction: column;
         align-items: center;
@@ -107,8 +116,11 @@
         height: 6rem;
         margin: 0.5rem 0;
     }
+	.home-body{
+		margin-top: 4rem;
+	}
     .home-body, .projects-body, .about-body {
-        padding: 6rem 1rem 1rem 1rem;
+        padding: 9rem 1rem 1rem 1rem !important;
         text-align: center;
     }
     .project-card {
@@ -254,32 +266,34 @@ body {
 }
 
 .profile-image {
-	margin-top: rem;
 	width: 11rem;
 	height: 11rem;
 	border-radius: 20%;
+	margin-top: 6rem;
+	z-index: 1;
 }
 
 .title-bar {
-	padding: 2rem 2rem 0rem 2rem;
+	padding: 1.5rem 2rem;
 	display: flex;
 	margin: 0;
 	position: fixed; 
 	top: 0;
+	left: 0;
+	right: 0;
 	color: #d1d1c7;
-	width: 100vw;
+	width: 100%;
 	justify-content: space-between;
 	align-items: center;
 	background: rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(12px);
 	-webkit-backdrop-filter: blur(12px);
 	z-index: 1000;
-	width: 100vw;
-	gap: 0;
 	transform: translateZ(0);
 	-webkit-transform: translateZ(0);
 	will-change: transform;
-	transition: background 0.3s ease-out;
+	transition: all 0.3s ease;
+	box-sizing: border-box;
 }
 
 /* Compact title-bar when user scrolls down */
@@ -386,10 +400,10 @@ body {
 	font-size: 3rem;
 	/* height: 100%; */
 	padding: 2rem;
-	margin-top:8.75rem;
+	margin-top: 2.5rem;
 	flex-direction: column;
 	align-items: left;
-	scroll-margin-top: 8.75rem;
+	/* scroll-margin-top: 8.75rem; */
 }
 
 .home-body p{
@@ -429,6 +443,10 @@ p{
 .project-card{
 	display: flex;
 }
+.project-image {
+        width: 35rem ;
+        height: 35rem ;
+    }
 .project-card p{
 	font-size: 1rem;
 	/* height: 6rem; */
