@@ -32,7 +32,7 @@ Welcome to my interactive, animated, and responsive portfolio website! Built to 
 ---
 
 ## 🖥️ Live Demo
-[View Portfolio](https://kalpit118.github.io/kalpitjare)
+[View Portfolio](https://kalpit118.github.io/portfolio)
 
 ---
 
@@ -47,11 +47,6 @@ Welcome to my interactive, animated, and responsive portfolio website! Built to 
 - [X (Twitter)](https://www.x.com/in/kalpitjare/)
 - [Discord](https://discord.gg/Wbchvww3ca)
 - [GitHub](https://github.com/kalpitjare118)
-
----
-
-## 📱 Mobile Experience
-> This site is best viewed on desktop. Mobile support is in progress!
 
 ---
 
