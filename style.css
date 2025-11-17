@@ -346,13 +346,13 @@ body {
 
 
 .left-side {
-	display: flex;
+	/* display: flex;
 	align-items: center;
-	flex: 1 1 0;
+	flex: 1 1 0; */
 }
 
 .right-side {
-	padding-right: 3rem;
+	padding-right: 0;
 	display: flex;
 	justify-content: right;
 	align-items: center;
